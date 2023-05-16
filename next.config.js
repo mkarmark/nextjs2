@@ -11,8 +11,8 @@ module.exports = {
         source: '/about',
         headers: [
           {
-            key: 'x-custom-header',
-            value: 'my custom header value',
+            key: 'Strict-Transport-Security',
+            value: 'max-age=63072000; includeSubDomains; preload',
           },
           {
             key: 'x-another-custom-header',

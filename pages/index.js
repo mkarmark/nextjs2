@@ -12,7 +12,7 @@ export async function getStaticProps() {
   const data = await res.json();
  
   // Pass data to the page via props
-  return { props: { data }, revalidate: 30, // In seconds };
+  return { props: { data }, revalidate: 30 };
 }
 
 export default function Home({ data }) {
